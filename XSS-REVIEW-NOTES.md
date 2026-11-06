@@ -8,7 +8,7 @@ Date: 4 November 2026
 
 - Where untrusted data enters: the q value in the web address (req.query.q)
 
-- Where it is output: written into the page by res.send
+- Where it is output: written into the response by res.json in the /search route
 
 - Why it is dangerous: The attacker-controlled value could be interpreted as executable HTML or JavaScript if it was inserted into the response without encoding.
 
